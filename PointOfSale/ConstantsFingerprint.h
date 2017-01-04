@@ -1,0 +1,27 @@
+#ifndef CONSTANTSFINGERPRINT_H
+#define CONSTANTSFINGERPRINT_H
+
+#define TRUE 1
+#define FALSE 0
+
+#define BLACK 0
+#define WHITE 255
+
+#define SIZE 304
+#define L_SIZE 32
+#define BLOCK_SIZE 16
+
+#define PEAK_MAX 30.0
+#define PEAK_MIN 2.0
+
+#define MIN_FREQ_DIFF 64.0
+#define EPSILON 0.0001
+
+#define NOT_ORIENTED 255
+
+#define SEGMENTATION_THRESHOLD 15.0
+#define ANGLE_THRESHOLD 14.0
+#define DISTANCE_THRESHOLD 15.0
+#define MIN_POINTS_MINUTIA 10
+
+#endif // CONSTANTSFINGERPRINT_H
