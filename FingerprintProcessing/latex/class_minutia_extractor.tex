@@ -1,0 +1,112 @@
+\hypertarget{class_minutia_extractor}{\section{Minutia\+Extractor Class Reference}
+\label{class_minutia_extractor}\index{Minutia\+Extractor@{Minutia\+Extractor}}
+}
+
+
+The \hyperlink{class_minutia_extractor}{Minutia\+Extractor} class Clase que recoge la funcionalidad encargada de realizar la extraccion de minucias de la imagen.  
+
+
+
+
+{\ttfamily \#include $<$minutiaextractor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_minutia_extractor_adccd8fca1f1718e7b736f158700d432a}{\hyperlink{class_minutia_extractor_adccd8fca1f1718e7b736f158700d432a}{Minutia\+Extractor} ()}\label{class_minutia_extractor_adccd8fca1f1718e7b736f158700d432a}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_minutia_extractor}{Minutia\+Extractor} Constructor vacio. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_minutia}{Minutia} $>$ \hyperlink{class_minutia_extractor_adbde01c42359f1cddc3d8cb99f09f5d9}{extract\+Minutiae} (cv\+::\+Mat \&matrix, cv\+::\+Mat \&orientation\+Image, cv\+::\+Mat \&segment, int block\+Size)
+\begin{DoxyCompactList}\small\item\em extract\+Minutia Metodo que realiza la extraccion de minucias sobre una huella dactilar \end{DoxyCompactList}\item 
+void \hyperlink{class_minutia_extractor_aa71d473dd4dcf6559a47765d17e16d5f}{overlay\+Minutiae} (std\+::vector$<$ \hyperlink{class_minutia}{Minutia} $>$ features, cv\+::\+Mat \&img)
+\begin{DoxyCompactList}\small\item\em Show Metodo que muestra las minucias sobre la imagen de la huella dactilar. \end{DoxyCompactList}\item 
+void \hyperlink{class_minutia_extractor_a7010ac95bbbfa607897eef04acc5e9aa}{compare\+Fingerprint\+Minutiae} (std\+::vector$<$ \hyperlink{class_minutia}{Minutia} $>$ features, cv\+::\+Mat \&img, int number\+Image)
+\begin{DoxyCompactList}\small\item\em compare\+Fingerprint\+Minutiaes Metodo que muestra la compracion entre dos conjuntos de minucias \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_minutia_extractor_a6f8e432d15f8b6758a38438d59462cfc}{std\+::vector$<$ \hyperlink{class_minutia}{Minutia} $>$ \hyperlink{class_minutia_extractor_a6f8e432d15f8b6758a38438d59462cfc}{minutiae}}\label{class_minutia_extractor_a6f8e432d15f8b6758a38438d59462cfc}
+
+\begin{DoxyCompactList}\small\item\em minutiae Vector en el que se van a almacenar minucias \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_minutia_extractor}{Minutia\+Extractor} class Clase que recoge la funcionalidad encargada de realizar la extraccion de minucias de la imagen. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_minutia_extractor_a7010ac95bbbfa607897eef04acc5e9aa}{\index{Minutia\+Extractor@{Minutia\+Extractor}!compare\+Fingerprint\+Minutiae@{compare\+Fingerprint\+Minutiae}}
+\index{compare\+Fingerprint\+Minutiae@{compare\+Fingerprint\+Minutiae}!Minutia\+Extractor@{Minutia\+Extractor}}
+\subsubsection[{compare\+Fingerprint\+Minutiae}]{\setlength{\rightskip}{0pt plus 5cm}void Minutia\+Extractor\+::compare\+Fingerprint\+Minutiae (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Minutia} $>$}]{features, }
+\item[{cv\+::\+Mat \&}]{img, }
+\item[{int}]{number\+Image}
+\end{DoxyParamCaption}
+)}}\label{class_minutia_extractor_a7010ac95bbbfa607897eef04acc5e9aa}
+
+
+compare\+Fingerprint\+Minutiaes Metodo que muestra la compracion entre dos conjuntos de minucias 
+
+
+\begin{DoxyParams}{Parameters}
+{\em features} & Vector de minucias \\
+\hline
+{\em img} & cv\+::\+Mat sobre la que se muestran las minucias \\
+\hline
+{\em number\+Image} & Imagen que se va a tratar \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_minutia_extractor_adbde01c42359f1cddc3d8cb99f09f5d9}{\index{Minutia\+Extractor@{Minutia\+Extractor}!extract\+Minutiae@{extract\+Minutiae}}
+\index{extract\+Minutiae@{extract\+Minutiae}!Minutia\+Extractor@{Minutia\+Extractor}}
+\subsubsection[{extract\+Minutiae}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Minutia} $>$ Minutia\+Extractor\+::extract\+Minutiae (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{matrix, }
+\item[{cv\+::\+Mat \&}]{orientation\+Image, }
+\item[{cv\+::\+Mat \&}]{segment, }
+\item[{int}]{block\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_minutia_extractor_adbde01c42359f1cddc3d8cb99f09f5d9}
+
+
+extract\+Minutia Metodo que realiza la extraccion de minucias sobre una huella dactilar 
+
+\begin{DoxyReturn}{Returns}
+Vector con las minucias extraidads 
+\end{DoxyReturn}
+Se recorren los bloques de imagen si la orientación es no nula
+
+Se recorren los pixels de cada bloque
+
+Si el pixel es de color negro se calcula su C\+N
+
+Minucia de tipo final, se comprueba si es verdadera y se añade
+
+Minucia de tipo bifurcacion, se comprueba si es verdadera y se añade
+
+Se eliminan las minucias que coinciden en los bordes de las crestas
+
+Se eliminan las falsas minucias minucias\hypertarget{class_minutia_extractor_aa71d473dd4dcf6559a47765d17e16d5f}{\index{Minutia\+Extractor@{Minutia\+Extractor}!overlay\+Minutiae@{overlay\+Minutiae}}
+\index{overlay\+Minutiae@{overlay\+Minutiae}!Minutia\+Extractor@{Minutia\+Extractor}}
+\subsubsection[{overlay\+Minutiae}]{\setlength{\rightskip}{0pt plus 5cm}void Minutia\+Extractor\+::overlay\+Minutiae (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Minutia} $>$}]{features, }
+\item[{cv\+::\+Mat \&}]{img}
+\end{DoxyParamCaption}
+)}}\label{class_minutia_extractor_aa71d473dd4dcf6559a47765d17e16d5f}
+
+
+Show Metodo que muestra las minucias sobre la imagen de la huella dactilar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em features} & Vector de minucias \\
+\hline
+{\em img} & cv\+::\+Mat sobre la que se muestran las minucias \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+minutiaextractor.\+h\item 
+minutiaextractor.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\hypertarget{class_frequency}{\section{Frequency Class Reference}
+\label{class_frequency}\index{Frequency@{Frequency}}
+}
+
+
+The \hyperlink{class_frequency}{Frequency} class Clase que recoge la funcionalidad encargada de realizar el calculo de la frecuencia de la imagen.  
+
+
+
+
+{\ttfamily \#include $<$frequency.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_frequency_a640e818df1d6e68f508dc21d305a7d22}{\hyperlink{class_frequency_a640e818df1d6e68f508dc21d305a7d22}{Frequency} ()}\label{class_frequency_a640e818df1d6e68f508dc21d305a7d22}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_frequency}{Frequency} Constructor vacio. \end{DoxyCompactList}\item 
+void \hyperlink{class_frequency_a073d778d1e37d4d83a9f52c1ba296b05}{calculate\+Frequency\+Block} (cv\+::\+Mat \&src, cv\+::\+Mat \&oi\+Matrix, int block\+Size)
+\begin{DoxyCompactList}\small\item\em calculate\+Frequency\+Block Metodo que va a realizar el calculo de la frecuencia de la imagen recibida \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_frequency_aa6fb6a46b73f44c471ee929d10f7d8d4}{cv\+::\+Mat \hyperlink{class_frequency_aa6fb6a46b73f44c471ee929d10f7d8d4}{freq\+Matrix}}\label{class_frequency_aa6fb6a46b73f44c471ee929d10f7d8d4}
+
+\begin{DoxyCompactList}\small\item\em freq\+Matrix cv\+::\+Mat que contiene frecuencia de la imagen \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_frequency}{Frequency} class Clase que recoge la funcionalidad encargada de realizar el calculo de la frecuencia de la imagen. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_frequency_a073d778d1e37d4d83a9f52c1ba296b05}{\index{Frequency@{Frequency}!calculate\+Frequency\+Block@{calculate\+Frequency\+Block}}
+\index{calculate\+Frequency\+Block@{calculate\+Frequency\+Block}!Frequency@{Frequency}}
+\subsubsection[{calculate\+Frequency\+Block}]{\setlength{\rightskip}{0pt plus 5cm}void Frequency\+::calculate\+Frequency\+Block (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{src, }
+\item[{cv\+::\+Mat \&}]{oi\+Matrix, }
+\item[{int}]{block\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_frequency_a073d778d1e37d4d83a9f52c1ba296b05}
+
+
+calculate\+Frequency\+Block Metodo que va a realizar el calculo de la frecuencia de la imagen recibida 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & cv\+::\+Mat que contiene la imagen de la que se va a calcular la frecuencia \\
+\hline
+{\em oi\+Matrix} & cv\+::\+Mat que contiene la orientacion imagen de la que se va a calcular la frecuencia \\
+\hline
+{\em block\+Size} & Entero que indica el tamaño de bloque a usar en el cálculo de la frecuencia \\
+\hline
+\end{DoxyParams}
+Se recorre la matriz en bloques de L\+\_\+\+S\+I\+Z\+E/2 x L\+\_\+\+S\+I\+Z\+E/2 (16 x 16)
+
+Se obtiene la orientacion en la que fluye ese bloque
+
+Se calcula la X-\/\+Signatura para la ventana orientada
+
+Comprobamos que los valores no se salgan fuera del rango
+
+Se calcula el valor maximo y minimo para el espectro de la frecuencia
+
+Se establecen el numero de crestas a 0 y se calcula el numero total de la ventana
+
+Se calcula la media de picos
+
+Si la recuencia no se encuentra entre 2 y 30 no se considera válida y hay que continuar el proceso
+
+Para los bloques en los que no se ha encotrado la frecuencia se le asigna la frecuencia de un bloque vecino. En caso de que el bloque vecino no tenga una frecuencia se deja como estaba
+
+Para suavizar los cambios en la frecuencia se aplica un filtro que realiza la media entre los bloques contiguos
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+frequency.\+h\item 
+frequency.\+cpp\end{DoxyCompactItemize}

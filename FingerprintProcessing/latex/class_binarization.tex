@@ -1,0 +1,92 @@
+\hypertarget{class_binarization}{\section{Binarization Class Reference}
+\label{class_binarization}\index{Binarization@{Binarization}}
+}
+
+
+The \hyperlink{class_binarization}{Binarization} class Clase que recoge la funcionalidad encargada de realizar la binarizacion de la imagen.  
+
+
+
+
+{\ttfamily \#include $<$binarization.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_binarization_a2227910fd9f1600f0f31c65285a8fc08}{\hyperlink{class_binarization_a2227910fd9f1600f0f31c65285a8fc08}{Binarization} ()}\label{class_binarization_a2227910fd9f1600f0f31c65285a8fc08}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_binarization}{Binarization}. \end{DoxyCompactList}\item 
+\hyperlink{class_binarization_a8ee0e3bd1fbc4347b1e34f9409970bb6}{Binarization} (int h, int w)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_binarization}{Binarization}. \end{DoxyCompactList}\item 
+void \hyperlink{class_binarization_a7cf4b278e99a38c12da399e33cc690cf}{binarize} (cv\+::\+Mat \&src, cv\+::\+Mat \&oi\+Matrix, cv\+::\+Mat \&segmented\+Matrix, int threshold, int block\+Size)
+\begin{DoxyCompactList}\small\item\em binarize \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_binarization_a4e1c66ac5f6ded0bfd845039025483ed}{cv\+::\+Mat \hyperlink{class_binarization_a4e1c66ac5f6ded0bfd845039025483ed}{bin\+Matrix}}\label{class_binarization_a4e1c66ac5f6ded0bfd845039025483ed}
+
+\begin{DoxyCompactList}\small\item\em bin\+Matrix cv\+::\+Mat que contiene la imagen binarizada \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_binarization}{Binarization} class Clase que recoge la funcionalidad encargada de realizar la binarizacion de la imagen. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_binarization_a8ee0e3bd1fbc4347b1e34f9409970bb6}{\index{Binarization@{Binarization}!Binarization@{Binarization}}
+\index{Binarization@{Binarization}!Binarization@{Binarization}}
+\subsubsection[{Binarization}]{\setlength{\rightskip}{0pt plus 5cm}Binarization\+::\+Binarization (
+\begin{DoxyParamCaption}
+\item[{int}]{h, }
+\item[{int}]{w}
+\end{DoxyParamCaption}
+)}}\label{class_binarization_a8ee0e3bd1fbc4347b1e34f9409970bb6}
+
+
+\hyperlink{class_binarization}{Binarization}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Entero que especifica el número de columnas del objeto cv\+::\+Mat que va a contoner la imagen binarizada \\
+\hline
+{\em w} & Entero que especifica el número de columnas del objeto cv\+::\+Mat que va a contoner la imagen binarizada \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_binarization_a7cf4b278e99a38c12da399e33cc690cf}{\index{Binarization@{Binarization}!binarize@{binarize}}
+\index{binarize@{binarize}!Binarization@{Binarization}}
+\subsubsection[{binarize}]{\setlength{\rightskip}{0pt plus 5cm}void Binarization\+::binarize (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{src, }
+\item[{cv\+::\+Mat \&}]{oi\+Matrix, }
+\item[{cv\+::\+Mat \&}]{segmented\+Matrix, }
+\item[{int}]{threshold, }
+\item[{int}]{block\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_binarization_a7cf4b278e99a38c12da399e33cc690cf}
+
+
+binarize 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & cv\+::\+Mat que contiene la imagen original que se va a binarizar \\
+\hline
+{\em oi\+Matrix} & cv\+::\+Mat que contiene la orientacion de la imagen que se va a binarizar \\
+\hline
+{\em segmented\+Matrix} & cv\+::\+Mat que contiene la mascara de segmentación de la imagen normalizada \\
+\hline
+{\em threshold} & Entero que indica el valor threshold utilizado para realizar la binarizacion \\
+\hline
+{\em block\+Size} & Entero que indica el tamaño del bloque utilizado en la orientacion \\
+\hline
+\end{DoxyParams}
+Todos los valores que sean menores que el threshold y esten dentro de la mascara se ponen a 0
+
+Si el bloque en el que se encuentran los pixeles es nulo, se ponen a 255
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+binarization.\+h\item 
+binarization.\+cpp\end{DoxyCompactItemize}

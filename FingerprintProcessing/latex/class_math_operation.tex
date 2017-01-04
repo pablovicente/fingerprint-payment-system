@@ -1,0 +1,216 @@
+\hypertarget{class_math_operation}{\section{Math\+Operation Class Reference}
+\label{class_math_operation}\index{Math\+Operation@{Math\+Operation}}
+}
+
+
+The \hyperlink{class_math_operation}{Math\+Operation} class Clase en la que se recogen las funciones matematicas necesitadas por el modulo.  
+
+
+
+
+{\ttfamily \#include $<$mathoperation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_math_operation_a06454b3f5ca3dda040cf1e84d57d728c}{\hyperlink{class_math_operation_a06454b3f5ca3dda040cf1e84d57d728c}{Math\+Operation} ()}\label{class_math_operation_a06454b3f5ca3dda040cf1e84d57d728c}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_math_operation}{Math\+Operation} Constructor vacio. \end{DoxyCompactList}\item 
+\hyperlink{class_math_operation_a2231defda46af01e401c279d9966de98}{Math\+Operation} (int elements)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_math_operation}{Math\+Operation} Contructor que recibe como argumento el numero de elementos del vector de elementos de la clase. \end{DoxyCompactList}\item 
+\hyperlink{class_math_operation_a8d34860d914580697c1100d082e204cc}{Math\+Operation} (int elements, cv\+::\+Mat \&mat)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_math_operation}{Math\+Operation} Contructor que recibe como argumento el numero de elementos del vector de elementos de la clase y la matrix de la image que se va a almacenar en el vector. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_afd8a4ec3216a9c1ab0391a1a63002d0d}{Calculate\+Mean} ()
+\begin{DoxyCompactList}\small\item\em Calculate\+Mean Metodo que calcula la media del vector de valores de la clase. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_a161db6b912577cdcde192eabed812fd8}{Calculate\+Variane} ()
+\begin{DoxyCompactList}\small\item\em Calculate\+Variane Metodo que calcula la varianza del vector de valores de la clase. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_aab883a9fbdbfe23a539d98089ea27e64}{Get\+Standard\+Deviation} ()
+\begin{DoxyCompactList}\small\item\em Get\+Standard\+Deviation Metodo que calcula la desviación tipica del vector de valores de la clase. \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_a56c06726344749b49944512947036689}{ceil0} (const double \&value)
+\begin{DoxyCompactList}\small\item\em ceil0 Metodo que realiza el redondeo al alza y cambiando el signo \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_a6a719d663bfc475ea89a723a918a8121}{roundhalfup} (const double \&value)
+\begin{DoxyCompactList}\small\item\em roundhalfup Metodo que realiza el redondeo al alza sumandole 0.\+5 \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_aa778c04f56422ba5d0caebc208a7c399}{roundhalfup0} (const double \&value)
+\begin{DoxyCompactList}\small\item\em roundhalfup0 Metodo que realiza el redondeo al alza sumandole 0.\+5 y cambiando el signo \end{DoxyCompactList}\item 
+double \hyperlink{class_math_operation_a744616f90b70846920b138ef40f0f110}{roundhalfeven} (const double \&value)
+\begin{DoxyCompactList}\small\item\em roundhalfeven Metodo que realiza el redondeo del banquero \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_math_operation_a6c76d3b9b52885d4e7a7712b92224275}{int \hyperlink{class_math_operation_a6c76d3b9b52885d4e7a7712b92224275}{max}}\label{class_math_operation_a6c76d3b9b52885d4e7a7712b92224275}
+
+\begin{DoxyCompactList}\small\item\em max Entero que almacena el numero de elementos \end{DoxyCompactList}\item 
+\hypertarget{class_math_operation_af9e269ecc7a79efe7490690dc9e70445}{std\+::vector$<$ double $>$ \hyperlink{class_math_operation_af9e269ecc7a79efe7490690dc9e70445}{values}}\label{class_math_operation_af9e269ecc7a79efe7490690dc9e70445}
+
+\begin{DoxyCompactList}\small\item\em values Vector que almacena los valores de la matriz sobre la que se van a realizar los calculos \end{DoxyCompactList}\item 
+\hypertarget{class_math_operation_a1dec04505997677a4dedbf645d4d128c}{double \hyperlink{class_math_operation_a1dec04505997677a4dedbf645d4d128c}{mean}}\label{class_math_operation_a1dec04505997677a4dedbf645d4d128c}
+
+\begin{DoxyCompactList}\small\item\em mean Double que almacena el valor de la media para calculos internos \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_math_operation}{Math\+Operation} class Clase en la que se recogen las funciones matematicas necesitadas por el modulo. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_math_operation_a2231defda46af01e401c279d9966de98}{\index{Math\+Operation@{Math\+Operation}!Math\+Operation@{Math\+Operation}}
+\index{Math\+Operation@{Math\+Operation}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{Math\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}Math\+Operation\+::\+Math\+Operation (
+\begin{DoxyParamCaption}
+\item[{int}]{elements}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_a2231defda46af01e401c279d9966de98}
+
+
+\hyperlink{class_math_operation}{Math\+Operation} Contructor que recibe como argumento el numero de elementos del vector de elementos de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements} & Numero de elementos que va a tener el vector utilizado para realizar los calculos \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_math_operation_a8d34860d914580697c1100d082e204cc}{\index{Math\+Operation@{Math\+Operation}!Math\+Operation@{Math\+Operation}}
+\index{Math\+Operation@{Math\+Operation}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{Math\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}Math\+Operation\+::\+Math\+Operation (
+\begin{DoxyParamCaption}
+\item[{int}]{elements, }
+\item[{cv\+::\+Mat \&}]{mat}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_a8d34860d914580697c1100d082e204cc}
+
+
+\hyperlink{class_math_operation}{Math\+Operation} Contructor que recibe como argumento el numero de elementos del vector de elementos de la clase y la matrix de la image que se va a almacenar en el vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elements} & Numero de elementos que va a tener el vector utilizado para realizar los calculos \\
+\hline
+{\em mat} & cv\+::\+Mat que contiene los valores de la imagen tratados \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_math_operation_afd8a4ec3216a9c1ab0391a1a63002d0d}{\index{Math\+Operation@{Math\+Operation}!Calculate\+Mean@{Calculate\+Mean}}
+\index{Calculate\+Mean@{Calculate\+Mean}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{Calculate\+Mean}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::\+Calculate\+Mean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_afd8a4ec3216a9c1ab0391a1a63002d0d}
+
+
+Calculate\+Mean Metodo que calcula la media del vector de valores de la clase. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_math_operation_a161db6b912577cdcde192eabed812fd8}{\index{Math\+Operation@{Math\+Operation}!Calculate\+Variane@{Calculate\+Variane}}
+\index{Calculate\+Variane@{Calculate\+Variane}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{Calculate\+Variane}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::\+Calculate\+Variane (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_a161db6b912577cdcde192eabed812fd8}
+
+
+Calculate\+Variane Metodo que calcula la varianza del vector de valores de la clase. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_math_operation_a56c06726344749b49944512947036689}{\index{Math\+Operation@{Math\+Operation}!ceil0@{ceil0}}
+\index{ceil0@{ceil0}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{ceil0}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::ceil0 (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_a56c06726344749b49944512947036689}
+
+
+ceil0 Metodo que realiza el redondeo al alza y cambiando el signo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Valor sobre el que se realiza el calculo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor calculado 
+\end{DoxyReturn}
+\hypertarget{class_math_operation_aab883a9fbdbfe23a539d98089ea27e64}{\index{Math\+Operation@{Math\+Operation}!Get\+Standard\+Deviation@{Get\+Standard\+Deviation}}
+\index{Get\+Standard\+Deviation@{Get\+Standard\+Deviation}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{Get\+Standard\+Deviation}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::\+Get\+Standard\+Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_aab883a9fbdbfe23a539d98089ea27e64}
+
+
+Get\+Standard\+Deviation Metodo que calcula la desviación tipica del vector de valores de la clase. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_math_operation_a744616f90b70846920b138ef40f0f110}{\index{Math\+Operation@{Math\+Operation}!roundhalfeven@{roundhalfeven}}
+\index{roundhalfeven@{roundhalfeven}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{roundhalfeven}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::roundhalfeven (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_a744616f90b70846920b138ef40f0f110}
+
+
+roundhalfeven Metodo que realiza el redondeo del banquero 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Valor sobre el que se realiza el calculo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor calculado 
+\end{DoxyReturn}
+\hypertarget{class_math_operation_a6a719d663bfc475ea89a723a918a8121}{\index{Math\+Operation@{Math\+Operation}!roundhalfup@{roundhalfup}}
+\index{roundhalfup@{roundhalfup}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{roundhalfup}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::roundhalfup (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_a6a719d663bfc475ea89a723a918a8121}
+
+
+roundhalfup Metodo que realiza el redondeo al alza sumandole 0.\+5 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Valor sobre el que se realiza el calculo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor calculado 
+\end{DoxyReturn}
+\hypertarget{class_math_operation_aa778c04f56422ba5d0caebc208a7c399}{\index{Math\+Operation@{Math\+Operation}!roundhalfup0@{roundhalfup0}}
+\index{roundhalfup0@{roundhalfup0}!Math\+Operation@{Math\+Operation}}
+\subsubsection[{roundhalfup0}]{\setlength{\rightskip}{0pt plus 5cm}double Math\+Operation\+::roundhalfup0 (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_math_operation_aa778c04f56422ba5d0caebc208a7c399}
+
+
+roundhalfup0 Metodo que realiza el redondeo al alza sumandole 0.\+5 y cambiando el signo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Valor sobre el que se realiza el calculo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor calculado 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mathoperation.\+h\item 
+mathoperation.\+cpp\end{DoxyCompactItemize}

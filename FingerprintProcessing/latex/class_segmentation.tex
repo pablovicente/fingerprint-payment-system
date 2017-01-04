@@ -1,0 +1,128 @@
+\hypertarget{class_segmentation}{\section{Segmentation Class Reference}
+\label{class_segmentation}\index{Segmentation@{Segmentation}}
+}
+
+
+The \hyperlink{class_segmentation}{Segmentation} class Clase que recoge la funcionalidad encargada de realizar la segmentacion de la imagen.  
+
+
+
+
+{\ttfamily \#include $<$segmentation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_segmentation_a966891da37798baabb99bf0144d47675}{\hyperlink{class_segmentation_a966891da37798baabb99bf0144d47675}{Segmentation} ()}\label{class_segmentation_a966891da37798baabb99bf0144d47675}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_segmentation}{Segmentation} Constructor vacio. \end{DoxyCompactList}\item 
+void \hyperlink{class_segmentation_ab0d2ebe111a662ed67c07de29102481f}{segment\+Orientation\+Image} (cv\+::\+Mat \&src, cv\+::\+Mat \&orientation, int block\+Size)
+\begin{DoxyCompactList}\small\item\em segment\+Orientation\+Image Metodo que calcula la mascara de segmentacion de la matriz de orientacion \end{DoxyCompactList}\item 
+void \hyperlink{class_segmentation_a86fcdf95b93b524d785fbc7fd12321bf}{recover\+Lost\+Blocks} (cv\+::\+Mat \&previous\+Oi, cv\+::\+Mat \&new\+Oi)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_segmentation_a86fcdf95b93b524d785fbc7fd12321bf}{Segmentation\+::recover\+Lost\+Blocks}. \end{DoxyCompactList}\item 
+void \hyperlink{class_segmentation_a0f6a8043631caf1e59a4d4ee5f5e5cb4}{enhance\+Orientation\+Image} (cv\+::\+Mat \&new\+Oi)
+\begin{DoxyCompactList}\small\item\em enhance\+Orientation\+Image Metodo que mejora la mascara de segmentacion de la matriz de orientacion \end{DoxyCompactList}\item 
+cv\+::\+Mat \hyperlink{class_segmentation_a1369175d9507b677d9aa7e118ef13305}{segment\+Source\+Image} (cv\+::\+Mat \&src, cv\+::\+Mat \&orientation, int block\+Size)
+\begin{DoxyCompactList}\small\item\em segment\+Source\+Image Metodo que calcula la mascara de segmentacion de la imagen original \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_segmentation}{Segmentation} class Clase que recoge la funcionalidad encargada de realizar la segmentacion de la imagen. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_segmentation_a0f6a8043631caf1e59a4d4ee5f5e5cb4}{\index{Segmentation@{Segmentation}!enhance\+Orientation\+Image@{enhance\+Orientation\+Image}}
+\index{enhance\+Orientation\+Image@{enhance\+Orientation\+Image}!Segmentation@{Segmentation}}
+\subsubsection[{enhance\+Orientation\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void Segmentation\+::enhance\+Orientation\+Image (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{new\+Oi}
+\end{DoxyParamCaption}
+)}}\label{class_segmentation_a0f6a8043631caf1e59a4d4ee5f5e5cb4}
+
+
+enhance\+Orientation\+Image Metodo que mejora la mascara de segmentacion de la matriz de orientacion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em oi} & cv\+::\+Mat que contiene la orientacion de la imagen \\
+\hline
+{\em block\+Size} & Tamaño del bloque \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_segmentation_a86fcdf95b93b524d785fbc7fd12321bf}{\index{Segmentation@{Segmentation}!recover\+Lost\+Blocks@{recover\+Lost\+Blocks}}
+\index{recover\+Lost\+Blocks@{recover\+Lost\+Blocks}!Segmentation@{Segmentation}}
+\subsubsection[{recover\+Lost\+Blocks}]{\setlength{\rightskip}{0pt plus 5cm}void Segmentation\+::recover\+Lost\+Blocks (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{previous\+Oi, }
+\item[{cv\+::\+Mat \&}]{new\+Oi}
+\end{DoxyParamCaption}
+)}}\label{class_segmentation_a86fcdf95b93b524d785fbc7fd12321bf}
+
+
+\hyperlink{class_segmentation_a86fcdf95b93b524d785fbc7fd12321bf}{Segmentation\+::recover\+Lost\+Blocks}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em previous\+Oi} & \\
+\hline
+{\em new\+Oi} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_segmentation_ab0d2ebe111a662ed67c07de29102481f}{\index{Segmentation@{Segmentation}!segment\+Orientation\+Image@{segment\+Orientation\+Image}}
+\index{segment\+Orientation\+Image@{segment\+Orientation\+Image}!Segmentation@{Segmentation}}
+\subsubsection[{segment\+Orientation\+Image}]{\setlength{\rightskip}{0pt plus 5cm}void Segmentation\+::segment\+Orientation\+Image (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{src, }
+\item[{cv\+::\+Mat \&}]{orientation, }
+\item[{int}]{block\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_segmentation_ab0d2ebe111a662ed67c07de29102481f}
+
+
+segment\+Orientation\+Image Metodo que calcula la mascara de segmentacion de la matriz de orientacion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & cv\+::\+Mat que contiene la imagen original \\
+\hline
+{\em orientation} & cv\+::\+Mat que contiene la orientacion de la imagen \\
+\hline
+\end{DoxyParams}
+Load image
+
+Initialize values \hypertarget{class_segmentation_a1369175d9507b677d9aa7e118ef13305}{\index{Segmentation@{Segmentation}!segment\+Source\+Image@{segment\+Source\+Image}}
+\index{segment\+Source\+Image@{segment\+Source\+Image}!Segmentation@{Segmentation}}
+\subsubsection[{segment\+Source\+Image}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Segmentation\+::segment\+Source\+Image (
+\begin{DoxyParamCaption}
+\item[{cv\+::\+Mat \&}]{src, }
+\item[{cv\+::\+Mat \&}]{orientation, }
+\item[{int}]{block\+Size}
+\end{DoxyParamCaption}
+)}}\label{class_segmentation_a1369175d9507b677d9aa7e118ef13305}
+
+
+segment\+Source\+Image Metodo que calcula la mascara de segmentacion de la imagen original 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & cv\+::\+Mat que contiene la imagen original \\
+\hline
+{\em orientation} & cv\+::\+Mat que contiene la orientacion de la imagen \\
+\hline
+{\em block\+Size} & Tamaño del bloque \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cv\+::\+Mat que contiene la mascara 
+\end{DoxyReturn}
+Initialize values
+
+Proceso de apertura y clausura de la imagen
+
+Clausura
+
+Apertura 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+segmentation.\+h\item 
+segmentation.\+cpp\end{DoxyCompactItemize}
