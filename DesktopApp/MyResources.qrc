@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/MyFiles">
+        <file>Images/btn_more.png</file>
+        <file>Images/creditCardIcon.png</file>
+        <file>Images/creditCardIconHalf.png</file>
+        <file>Images/deleteIcon.png</file>
+        <file>Images/detallado.png</file>
+        <file>Images/flecha.png</file>
+        <file>Images/fondo_small.png</file>
+        <file>Images/fondo.png</file>
+        <file>Images/huella.png</file>
+        <file>Images/inicioLogo.jpg</file>
+        <file>Images/initial.jpg</file>
+        <file>Images/landingBackground.jpg</file>
+        <file>Images/leftHand.png</file>
+        <file>Images/leftHandIcon.png</file>
+        <file>Images/manos.png</file>
+        <file>Images/masterCardLogo.jpg</file>
+        <file>Images/masterCardSmallLogo.jpg</file>
+        <file>Images/plusButtonIcon.png</file>
+        <file>Images/rightHand.png</file>
+        <file>Images/rightHandIcon.png</file>
+        <file>Images/simple.png</file>
+        <file>Images/smallLogo.png</file>
+        <file>Images/smallLogo2x.png</file>
+        <file>Images/smallLogoAlpha.png</file>
+        <file>Images/smallLogoAlpha2x.png</file>
+        <file>Images/spinner.gif</file>
+        <file>Images/toolButton.png</file>
+        <file>Images/visaLogo.gif</file>
+        <file>Images/visaSmallLogo.gif</file>
+        <file>Images/warning.png</file>
+        <file>Images/btn_settings.png</file>
+        <file>Images/whiteSpinner.gif</file>
+        <file>Images/712.GIF</file>
+        <file>Images/downArrow.png</file>
+        <file>Images/spinner2.GIF</file>
+        <file>Images/spinner3.GIF</file>
+        <file>Images/btn_close.png</file>
+        <file>Images/ajax-loader.gif</file>
+        <file>Images/pencil.png</file>
+        <file>Images/upArrow.png</file>
+        <file>Images/visa_logo.png</file>
+        <file>Images/amex.png</file>
+        <file>Images/maestro.png</file>
+    </qresource>
+</RCC>
